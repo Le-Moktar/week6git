@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     aws = {
-        sourdce = "hashicorp/aws"
-        version = "4.61.0"
+      source = "hashicorp/aws"
+      version = "4.61.0"
     }
   }
 }
