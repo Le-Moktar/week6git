@@ -7,6 +7,7 @@ terraform {
   }
 }
 
+# this line is inactive
 provider "aws" {
   region = "us-east-2"
 }
