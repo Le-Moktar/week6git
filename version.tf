@@ -1,3 +1,5 @@
+#always use terraform provider online to builld a code
+
 terraform {
   required_providers {
     aws = {
