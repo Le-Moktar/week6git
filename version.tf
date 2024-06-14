@@ -1,7 +1,9 @@
+#always use terraform provider online to builld a code
+
 terraform {
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "4.61.0"
     }
   }
