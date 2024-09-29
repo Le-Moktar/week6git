@@ -3,7 +3,22 @@ pipeline {
   stages {
     stage ('init'){
       steps{
-        sh 'terraform init -no-color'
+        sh 'terraform init -ugrade -no-color'
+      }
+    }
+     stage ('validate'){
+      steps{
+        sh 'terraform validate -no-color'
+      }
+    }
+     stage ('plan'){
+      steps{
+        sh 'terraform plan -no-color'
+      }
+    }
+     stage ('apply'){
+      steps{
+        sh 'terraform apply --auto-approve -no-color'
       }
     }
   }
