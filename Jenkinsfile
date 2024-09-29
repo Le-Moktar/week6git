@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ('init'){
       steps{
-        sh 'terraform init -ugrade -no-color'
+        sh 'terraform init -upgrade -no-color'
       }
     }
      stage ('validate'){
