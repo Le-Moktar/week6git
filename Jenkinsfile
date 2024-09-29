@@ -2,7 +2,7 @@ pipeline {
   agent none
     stages{
       stage('init'){
-        steps{
+        step{
          sh 'terraform init -upgrade -no-color'
           }
        }
